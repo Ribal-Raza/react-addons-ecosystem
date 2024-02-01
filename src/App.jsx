@@ -1,7 +1,14 @@
+import { CounterLayout } from "./components";
+import { CounterProvider } from "./context/CounterContext";
+
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <CounterProvider>
+        <CounterLayout />
+      </CounterProvider>
+    </div>
+  );
+};
 
-export default App
+export default App;
